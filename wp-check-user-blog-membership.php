@@ -1,3 +1,5 @@
+// Check if a user from multisite belongs to this site to login
+
 add_filter('authenticate', 'wp_check_user_blog_membership', 20, 3);
 function wp_check_user_blog_membership($user, $username, $password){
 
