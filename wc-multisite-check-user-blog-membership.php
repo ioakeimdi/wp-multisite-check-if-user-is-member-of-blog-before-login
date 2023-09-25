@@ -1,3 +1,4 @@
+<?php
 // Check if a user from multisite belongs to this site to login
 
 add_filter('woocommerce_process_login_errors', 'wc_check_user_blog_membership', 20, 3);
