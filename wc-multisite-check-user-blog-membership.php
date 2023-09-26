@@ -15,4 +15,5 @@ function wc_check_user_blog_membership($validation_error, $username, $password) 
 	}
 
 	return $validation_error;
+	
 }
