@@ -11,6 +11,7 @@ function wc_check_user_blog_membership($validation_error, $username, $password) 
 	}
 	
 	if($user && !is_user_member_of_blog($user->ID, get_current_blog_id())){
+		// return error
 		$validation_error->add('authentication_failed', __('You are not a member of this website'));
 	}
 
